@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from "react";
-import { View, FlatList, Image, StyleSheet } from "react-native";
+import { View, FlatList, Image, StyleSheet, Dimensions } from "react-native";
 import * as firebase from "firebase";
 import { Text, Button, SafeAreaView } from "react-native";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import { TouchableOpacity } from "react-native-gesture-handler";
 
 require("firebase/firestore");
+
+const { width, height } = Dimensions.get("window");
+console.log(width);
 
 export default function ChallengeFeed(props) {
   const [submissions, setSubmissions] = useState([]);
@@ -48,7 +51,7 @@ export default function ChallengeFeed(props) {
         }}
       />
       <View style={styles.imageCardInfo}>
-        <View>
+        <View style={styles.imageCardText}>
           <Text style={styles.caption}>{item.caption || "No caption"}</Text>
           <Text style={styles.author}>
             {item.author || "Anonymous uploader"}
@@ -57,7 +60,8 @@ export default function ChallengeFeed(props) {
         <TouchableOpacity
           onPress={() => {
             handleFavourite(item);
-          }}>
+          }}
+        >
           {!hasVoted && <Text style={styles.heart}>♥️</Text>}
         </TouchableOpacity>
       </View>
@@ -105,18 +109,22 @@ const styles = StyleSheet.create({
     marginBottom: 15,
   },
   image: {
-    height: 300,
+    height: 350,
     width: "auto",
   },
   caption: {
     fontSize: 18,
+    maxWidth: width,
   },
   author: {
     fontSize: 18,
     fontWeight: "700",
     paddingTop: 5,
   },
-  heart: { padding: 10, fontSize: 28, backgroundColor: "pink" },
+  heart: { padding: 10, fontSize: 28, backgroundColor: "pink", marginLeft: 10 },
+  imageCard: {
+    maxWidth: "auto",
+  },
   imageCardInfo: {
     flex: 1,
     flexDirection: "row",
@@ -124,5 +132,9 @@ const styles = StyleSheet.create({
     padding: 10,
     marginBottom: 15,
     backgroundColor: "#e8e8e8",
+    maxWidth: width,
+  },
+  imageCardText: {
+    maxWidth: width - (80 / 100) * 100,
   },
 });
