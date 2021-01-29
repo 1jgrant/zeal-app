@@ -193,7 +193,7 @@ const Profile = () => {
           <View>
             <Text style={styles.username}>{user.displayName}</Text>
             <Text style={styles.joinedDate}>
-              Member since: {formatJoinDate(user.createdAt)}
+              Last Logged in: {formatJoinDate(user.createdAt)}
             </Text>
           </View>
           <View style={styles.userForm}>

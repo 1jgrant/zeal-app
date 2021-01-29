@@ -230,6 +230,7 @@ const styles = StyleSheet.create({
     color: "#FFF",
     fontSize: 32,
     marginTop: 20,
+    paddingTop: 20,
     marginBottom: 10,
   },
   image: {
