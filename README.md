@@ -1,24 +1,30 @@
 # Zeal 🦓
 
-Zeal is a social activity app that allows friends to get creative and collectively partake in regular photography challenges on different topics, wherever they are. Each user-created group, has a list of challenges to work through, which include topics like portraits, nature, black and white, and more. After submitting that challenge's entry, a user can then see how their friends fared and vote for their favourite. Think you can take better photos than your mates? Prove it!
+## Table of Contents
 
-## Tech Used:
+- [About](#about)
+  - [Features](#features)
+- [Screenshots](#screenshots)
+- [Technologies](#technologies)
 
-React Native | JavaScript | Redux | Firebase Firestore | Firebase Authentication | Google Cloud Storage | Expo
+## About
 
-## How to deploy:
+Zeal is a social activity app that allows friends to get creative and collectively partake in regular photography challenges on different topics, wherever they are. Each user-created group has a list of challenges to work through, which include topics like portraits, nature, black and white, and more. After submitting that challenge's entry, a user can then see how their friends fared and vote for their favourite. Think you can take better photos than your mates? Prove it!
 
-You can interact with the app on either a iOS simulator or an android simulator if you have those downloaded. 
+This app was made as a final project of the Northcoders bootcamp in a team of 4 over 2 weeks.
 
-You can also use the Expo app on your mobile to scan a QR code, and then use the app on your own phone. 
+## Screenshots
 
-Steps: 
-1. Fork and git clone this repo onto your own computer. 
-2. Using terminal, `cd zeal_app` to get into the repo.
-3. Run `npm install` to install the dependencies.
-4. After the above is complete, run `expo start -c` and wait for the QR code to appear.
-5. Either scan the QR code with your phone (which should open the Expo app) or type the appropriate letter in terminal to open a simulator.
+<p float='middle'>
+<img src='./assets/zealpost20fps.gif'>
+</p>
 
+## Technologies
 
-**Notes**
-- We're currently looking at improving responsiveness across devices. Because of this, the recommended way of viewing the app is using xcode's iOS simulator, on an iPhone 12 pro model. 
+- [React-Native](https://reactnative.dev/)
+- [Expo](https://expo.io/)
+- [React Redux](https://react-redux.js.org/)
+- [React Navigation](https://reactnavigation.org/)
+- [Firebase Authentication](https://firebase.google.com/docs/auth)
+- [Firebase Firestore](https://firebase.google.com/docs/firestore)
+- [Firebase Storage](https://firebase.google.com/docs/storage)

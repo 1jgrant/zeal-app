@@ -9,6 +9,6 @@ npm-debug.*
 *.orig.*
 web-build/
 fbConfig.js
-
+/dev
 # macOS
 .DS_Store
