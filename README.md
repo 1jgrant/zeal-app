@@ -16,7 +16,7 @@ This app was made as a final project of the Northcoders bootcamp in a team of 4 
 ## Screenshots
 
 <p float='middle'>
-<img src='./assets/zealpost20fps.gif'>
+<img src='./assets/zealMockup.png'>
 </p>
 
 ## Technologies
