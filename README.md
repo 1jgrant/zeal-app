@@ -3,7 +3,6 @@
 ## Table of Contents
 
 - [About](#about)
-  - [Features](#features)
 - [Screenshots](#screenshots)
 - [Technologies](#technologies)
 
